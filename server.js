@@ -1,6 +1,5 @@
 const aedes = require('aedes')()
 const server = require('net').createServer(aedes.handle)
-const axios = require('axios');
 
 server.listen(1883, function () {
     console.log('Aedes MQTT broker is listening on port 1883')
